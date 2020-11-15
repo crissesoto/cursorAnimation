@@ -1,5 +1,7 @@
+@import "../varibles.scss";
+
 .hero {
-  background: #fff;
+  background: $background;
   .container {
     @media (min-width: 360px) {
       padding: 0 30px;
@@ -40,10 +42,13 @@
           position: relative;
           h1 {
             margin: 0;
+            color: $headline;
+            font-size: 2vw;
+            font-weight: 700;
 
             font-weight: 400;
             @media (min-width: 1800px) {
-              font-size: 28px;
+              font-size: 3vw;
             }
           }
         }
@@ -65,23 +70,23 @@
               }
             }
             a {
-              padding: 12px 22px;
+              padding: 12px 20px;
               display: inline-block;
               position: relative;
               overflow: hidden;
               text-decoration: none;
-              color: transparent;
+              color: $headline;
               transition: color 0.3s, -webkit-text-stroke 0.3s;
-              -webkit-text-stroke: 1px #000;
+              -webkit-text-stroke: 1px $para;
               &:hover {
-                color: black;
+                color: $highlight;
                 -webkit-text-stroke: 1px transparent;
               }
               span {
                 line-height: 1.1;
                 font-weight: 700;
                 text-shadow: none;
-                font-size: 5.8vw;
+                font-size: 5.3vw;
               }
             }
             &:first-child {
@@ -102,9 +107,10 @@
       .hero-inner-footer-text {
         p {
           font-size: 2.8rem;
-          margin-top: -90px;
+          margin-top: -150px;
           width: 70%;
           line-height: 4.4rem;
+          color: $para;
         }
       }
     }
